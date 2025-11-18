@@ -15,4 +15,16 @@ document.addEventListener('DOMContentLoaded', function() {
             menuToggle.setAttribute('aria-expanded', isExpanded);
         });
     }
+
+    // Animación con Anime.js para el logo de la barra de navegación.
+    
+    anime({
+        targets: '.navbar-brand img',
+        scale: [
+            {value: 1, easing: 'easeOutSine', duration: 500},
+            {value: 1.1, easing: 'easeInOutQuad', duration: 1200},
+            {value: 1, easing: 'easeOutElastic', duration: 1000}
+        ],
+        loop: false // Se ejecuta solo una vez al cargar la página
+    });
 });
