@@ -1,3 +1,4 @@
+/* Define los colores principales para mantener la consistencia en todo el sitio */
 :root {
     --primary-color: #e85d04;
     --secondary-color: #f2a154;
@@ -5,165 +6,180 @@
     --background-color: #fffaf5;
     --card-background-color: #fff3e0;
     --text-color: #333;
-    --light-text-color: #fff
+    --light-text-color: #fff;
 }
 
+/* Estilos generales del cuerpo del documento */
 body {
     font-family: 'Roboto', Arial, sans-serif;
     background-color: var(--background-color);
-    color: var(--text-color)
+    color: var(--text-color);
 }
 
+/* Estilos para los encabezados */
 h1,
 h2,
 h3 {
-    color: var(--primary-color)
+    color: var(--primary-color);
 }
 
+/* Mejora la legibilidad de los párrafos */
 p {
-    line-height: 1.6
+    line-height: 1.6;
 }
 
+/* Asegura que las imágenes sean responsivas y tengan bordes redondeados */
 img {
     max-width: 100%;
     height: auto;
-    border-radius: 10px
+    border-radius: 10px;
 }
 
+/* Personalización de la barra de navegación */
 .navbar {
-    background-color: var(--secondary-color)!important
+    background-color: var(--secondary-color) !important;
 }
 
 .navbar .navbar-brand,
 .navbar .nav-link {
-    color: var(--light-text-color)!important
+    color: var(--light-text-color) !important;
 }
 
+/* Resalta el enlace activo o al pasar el cursor */
 .navbar .nav-link.active,
 .navbar .nav-link:hover {
     background-color: var(--primary-color);
-    border-radius: 5px
+    border-radius: 5px;
 }
 
 .navbar-brand img {
-    margin-right: .5rem
+    margin-right: .5rem;
 }
 
+/* Oculta el enlace para saltar contenido hasta que reciba foco */
 .skip-link {
     position: absolute;
     left: -9999px;
     width: 1px;
     height: 1px;
     top: auto;
-    left: -999px;
     overflow: hidden;
-    z-index: -999
+    z-index: -999;
 }
 
+/* Muestra el enlace para saltar contenido cuando es accesible mediante teclado */
 .skip-link:focus {
     position: static;
     width: auto;
     height: auto;
-    top: auto;
-    left: auto;
     overflow: visible;
     z-index: 999;
     display: block;
     padding: 10px;
     background-color: var(--primary-color);
     color: var(--light-text-color);
-    text-decoration: none
+    text-decoration: none;
 }
 
+/* Fondo para la sección principal */
 #hero.bg-light {
-    background-color: #ffe5b4!important
+    background-color: #ffe5b4 !important;
 }
 
+/* Estilo de las tarjetas con sombra y transición */
 .card {
     box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
-    transition: transform .2s ease-in-out
+    transition: transform .2s ease-in-out;
 }
 
+/* Efecto de elevación al pasar el cursor sobre las tarjetas */
 .card:hover {
-    transform: translateY(-5px)
+    transform: translateY(-5px);
 }
 
+/* Ajusta la imagen de la tarjeta para que se vea bien */
 .card-img-top {
     height: 200px;
-    object-fit: cover
+    object-fit: cover;
 }
 
+/* Estilos para los botones */
 .btn-primary {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
-    color: var(--light-text-color)
+    color: var(--light-text-color);
 }
 
 .btn-primary:hover {
     background-color: #d05203;
-    border-color: #d05203
+    border-color: #d05203;
 }
 
 .btn-secondary {
     background-color: var(--secondary-color);
     border-color: var(--secondary-color);
-    color: var(--light-text-color)
+    color: var(--light-text-color);
 }
 
 .btn-secondary:hover {
     background-color: var(--primary-color);
-    border-color: var(--primary-color)
+    border-color: var(--primary-color);
 }
 
 .btn-info {
     background-color: var(--tertiary-color);
     border-color: var(--tertiary-color);
-    color: var(--text-color)
+    color: var(--text-color);
 }
 
 .btn-info:hover {
     background-color: var(--secondary-color);
     border-color: var(--secondary-color);
-    color: var(--light-text-color)
+    color: var(--light-text-color);
 }
 
+/* Estilos del pie de página */
 footer.bg-light {
-    background-color: var(--secondary-color)!important;
-    color: var(--light-text-color)!important
+    background-color: var(--secondary-color) !important;
+    color: var(--light-text-color) !important;
 }
 
 footer h4 {
-    color: var(--light-text-color)
+    color: var(--light-text-color);
 }
 
 footer a {
     color: var(--light-text-color);
-    text-decoration: none
+    text-decoration: none;
 }
 
 footer a:hover {
-    text-decoration: underline
+    text-decoration: underline;
 }
 
+/* Espaciado para las secciones de contenido */
 #consejos,
 #recetas,
 #postres {
-    padding: 60px 0
+    padding: 60px 0;
 }
 
+/* Fondo para el cuerpo de las tarjetas */
 .card-body {
-    background-color: var(--card-background-color)
+    background-color: var(--card-background-color);
 }
 
+/* Estilos para formularios */
 form .form-control {
-    border-radius: 5px
+    border-radius: 5px;
 }
 
 form .btn {
-    width: 100%
+    width: 100%;
 }
 
+/* Dimensiones para el mapa de contacto */
 #mapa {
     height: 400px;
-    width: 100%
+    width: 100%;
 }
