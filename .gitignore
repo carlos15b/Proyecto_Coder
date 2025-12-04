@@ -1,0 +1,41 @@
+# Node.js
+node_modules/
+.npm/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python (if any backend processing or tooling is added)
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Dependencies
+/vendor/
+
+# Sass/Less
+.sass-cache/
+.less-cache/
+
+# Build artifacts
+/dist/
+/build/
+
+# IDE and OS files
+.DS_Store
+Thumbs.db
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+*.log
+
+# Environment variables
+.env
+.env.local
+
+# Gemini temporary files
+.geminiignore
+.gemini/
