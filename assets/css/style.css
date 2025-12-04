@@ -214,3 +214,18 @@ form .btn {
     background-color: #1DA851;
     color: white;
 }
+
+/* Estilos para alinear botones en "Sobre Nosotros" */
+.about-us-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/* Mejoras para el pie de página con Flexbox */
+footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
