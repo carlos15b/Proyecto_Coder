@@ -1,0 +1,23 @@
+// _footer.scss
+
+footer.bg-light {
+    background-color: $secondary-color !important;
+    color: $light-text-color !important;
+
+    h4 {
+        color: $light-text-color;
+    }
+
+    a {
+        color: $light-text-color;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .col-12.text-center {
+        @include flex-center;
+    }
+}

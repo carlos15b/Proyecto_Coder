@@ -1,0 +1,17 @@
+// _header.scss
+
+#hero.bg-light {
+    background-color: #ffe5b4 !important;
+}
+
+.hero-with-bg {
+    background-image: url('../img/bienvenida.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+    h1, p {
+        color: white;
+    }
+}

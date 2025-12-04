@@ -1,0 +1,52 @@
+// _buttons.scss
+
+.btn-primary {
+    background-color: $primary-color;
+    border-color: $primary-color;
+    color: $light-text-color;
+
+    &:hover {
+        background-color: darken($primary-color, 5%);
+        border-color: darken($primary-color, 5%);
+    }
+}
+
+.btn-secondary {
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+    color: $light-text-color;
+
+    &:hover {
+        background-color: $primary-color;
+        border-color: $primary-color;
+    }
+}
+
+.btn-info {
+    background-color: $tertiary-color;
+    border-color: $tertiary-color;
+    color: $text-color;
+
+    &:hover {
+        background-color: $secondary-color;
+        border-color: $secondary-color;
+        color: $light-text-color;
+    }
+}
+
+.btn-whatsapp {
+    background-color: #25D366;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #1DA851;
+        color: white;
+    }
+}

@@ -1,0 +1,50 @@
+// _navigation.scss
+
+.navbar {
+    background-color: $secondary-color !important;
+
+    .navbar-brand,
+    .nav-link {
+        color: $light-text-color !important;
+    }
+
+    .nav-link.active,
+    .nav-link:hover {
+        background-color: $primary-color;
+        border-radius: 5px;
+    }
+
+    .navbar-brand img {
+        margin-right: .5rem;
+    }
+
+    @media (max-width: 767.98px) {
+        .nav-link {
+            font-size: 0.9rem;
+            padding: 0.5rem 0.75rem;
+        }
+    }
+}
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    top: auto;
+    overflow: hidden;
+    z-index: -999;
+}
+
+.skip-link:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    z-index: 999;
+    display: block;
+    padding: 10px;
+    background-color: $primary-color;
+    color: $light-text-color;
+    text-decoration: none;
+}

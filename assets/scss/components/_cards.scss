@@ -1,0 +1,25 @@
+// _cards.scss
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+    transition: transform .2s ease-in-out;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    background-color: $card-background-color;
+}
+
+.card-message {
+    @extend %message-box;
+    background-color: lighten($card-background-color, 5%);
+    border-color: darken($card-background-color, 10%);
+}
