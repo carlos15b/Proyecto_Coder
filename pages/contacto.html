@@ -10,6 +10,7 @@
   <!-- Estilos de Bootstrap y personalizados -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <!-- Enlace para accesibilidad, permite saltar al contenido principal -->
@@ -41,30 +42,97 @@
 
 <!-- Contenido principal de la página de contacto -->
 <main id="main-content" role="main" class="container mt-4">
-  <section class="contenido contacto-contenido text-center">
-    <h2 class="mb-3">Contacto</h2>
-    <p class="lead mb-4">¿Tienes alguna pregunta o sugerencia? ¡No dudes en contactarme!</p>
+  <section class="contenido contacto-contenido">
+    <div class="text-center">
+      <h2 class="mb-3">Contacto</h2>
+      <p class="lead mb-4">¿Tienes alguna pregunta o sugerencia? ¡No dudes en contactarme!</p>
+    </div>
     
-    <!-- Formulario de contacto -->
-    <form class="col-md-6 mx-auto">
-      <!-- Campo para el nombre -->
-      <div class="mb-3">
-        <label for="nombre" class="form-label">Nombre:</label>
-        <input type="text" class="form-control" id="nombre" name="nombre" required>
+    <div class="row">
+      <!-- Columna del Formulario -->
+      <div class="col-lg-6 mb-4">
+        <h3 class="h4 mb-3">Envíanos un mensaje</h3>
+        <!-- Formulario de contacto con validación de Bootstrap -->
+        <form id="contact-form" class="needs-validation" action="https://formspree.io/f/your_form_id" method="POST" novalidate>
+          <!-- Campo para el nombre -->
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre:</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" required>
+            <div class="invalid-feedback">
+              Por favor, ingresa tu nombre.
+            </div>
+          </div>
+          <!-- Campo para el email -->
+          <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+            <div class="invalid-feedback">
+              Por favor, ingresa un correo electrónico válido.
+            </div>
+          </div>
+          <!-- Campo para el asunto -->
+          <div class="mb-3">
+            <label for="asunto" class="form-label">Asunto:</label>
+            <input type="text" class="form-control" id="asunto" name="asunto" required>
+            <div class="invalid-feedback">
+              Por favor, ingresa un asunto.
+            </div>
+          </div>
+          <!-- Campo para el teléfono (opcional) -->
+          <div class="mb-3">
+            <label for="telefono" class="form-label">Teléfono: <span class="text-muted">(Opcional)</span></label>
+            <input type="tel" class="form-control" id="telefono" name="telefono">
+          </div>
+          <!-- Campo para el mensaje -->
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje:</label>
+            <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+            <div class="invalid-feedback">
+              Por favor, ingresa tu mensaje.
+            </div>
+          </div>
+          <!-- Botón de envío -->
+          <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+        </form>
+        <div id="form-status" class="mt-3"></div>
       </div>
-      <!-- Campo para el email -->
-      <div class="mb-3">
-        <label for="email" class="form-label">Email:</label>
-        <input type="email" class="form-control" id="email" name="email" required>
+
+      <!-- Columna de Información de Contacto y Mapa -->
+      <div class="col-lg-6">
+        <h3 class="h4 mb-3">Nuestra Información</h3>
+        <p>Aquí puedes encontrarnos y contactarnos directamente.</p>
+        
+        <div class="d-flex mb-3">
+          <i class="fas fa-map-marker-alt fa-2x me-3 text-dark"></i>
+          <div>
+            <strong>Dirección:</strong><br>
+            Av. Siempreviva 123<br>
+            Lima, Perú
+          </div>
+        </div>
+        
+        <div class="d-flex mb-3">
+          <i class="fas fa-envelope fa-2x me-3 text-dark"></i>
+          <div>
+            <strong>Email:</strong><br>
+            <a href="mailto:info@elrincondelbuensabor.com">info@elrincondelbuensabor.com</a>
+          </div>
+        </div>
+        
+        <div class="d-flex mb-3">
+          <i class="fas fa-phone fa-2x me-3 text-dark"></i>
+          <div>
+            <strong>Teléfono:</strong><br>
+            +123 456 7890
+          </div>
+        </div>
+
+        <!-- Placeholder para el mapa -->
+        <div id="map-placeholder" class="bg-light border" style="height: 250px;">
+          <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-77.142793%2C-12.146374%2C-76.942793%2C-11.946374&amp;layer=mapnik&amp;marker=-12.046374%2C-77.042793" style="border: 1px solid black"></iframe>
+        </div>
       </div>
-      <!-- Campo para el mensaje -->
-      <div class="mb-3">
-        <label for="mensaje" class="form-label">Mensaje:</label>
-        <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
-      </div>
-      <!-- Botón de envío -->
-      <button type="submit" class="btn btn-primary">Enviar</button>
-    </form>
+    </div>
   </section>
 </main>
 

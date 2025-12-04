@@ -183,3 +183,34 @@ form .btn {
     height: 400px;
     width: 100%;
 }
+
+/* Estilo para la sección de bienvenida con imagen de fondo */
+.hero-with-bg {
+    background-image: url('../img/bienvenida.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-with-bg h1, .hero-with-bg p {
+    color: white;
+}
+
+/* Estilo para el botón de WhatsApp */
+.btn-whatsapp {
+    background-color: #25D366;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1DA851;
+    color: white;
+}

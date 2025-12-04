@@ -27,4 +27,46 @@ document.addEventListener('DOMContentLoaded', function() {
         ],
         loop: false // Se ejecuta solo una vez al cargar la página
     });
+
+    // Formulario de contacto - validación y envío AJAX
+    const contactForm = document.getElementById('contact-form');
+    const formStatus = document.getElementById('form-status');
+
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+
+            if (contactForm.checkValidity()) {
+                const formData = new FormData(contactForm);
+                const action = contactForm.getAttribute('action');
+
+                fetch(action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                }).then(response => {
+                    if (response.ok) {
+                        formStatus.innerHTML = '<div class="alert alert-success">¡Gracias por tu mensaje! Te contactaremos pronto.</div>';
+                        contactForm.reset();
+                        contactForm.classList.remove('was-validated');
+                    } else {
+                        response.json().then(data => {
+                            if (Object.hasOwn(data, 'errors')) {
+                                formStatus.innerHTML = `<div class="alert alert-danger">${data["errors"].map(error => error["message"]).join(", ")}</div>`;
+                            } else {
+                                formStatus.innerHTML = '<div class="alert alert-danger">Hubo un problema al enviar tu mensaje.</div>';
+                            }
+                        })
+                    }
+                }).catch(error => {
+                    formStatus.innerHTML = '<div class="alert alert-danger">Hubo un problema al enviar tu mensaje.</div>';
+                });
+            }
+
+            contactForm.classList.add('was-validated');
+        }, false);
+    }
 });
