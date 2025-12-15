@@ -50,7 +50,7 @@
   </div>
   
   <!-- Sección que contiene las tarjetas de postres -->
-  <section class="contenido row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+  <section class="contenido row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 postres-grid">
     <!-- Tarjeta de postre: Torta de Chocolate -->
     <div class="col">
       <article class="card h-100">
@@ -58,6 +58,17 @@
         <div class="card-body d-flex flex-column">
           <h3 class="card-title">Torta de Chocolate</h3>
           <p class="card-text">Una torta de chocolate húmeda y esponjosa, perfecta para cualquier ocasión.</p>
+          <div class="mt-auto">
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseTorta" role="button" aria-expanded="false" aria-controls="collapseTorta">Ver Preparación</a>
+          </div>
+          <div class="collapse mt-3" id="collapseTorta">
+            <div class="card card-body">
+              <h5>Ingredientes</h5>
+              <ul><li>Harina, azúcar, cocoa</li><li>Huevos, leche, aceite</li></ul>
+              <h5>Preparación</h5>
+              <p>Mezclar ingredientes secos, luego los húmedos. Combinar y hornear a 180°C.</p>
+            </div>
+          </div>
         </div>
       </article>
     </div>
@@ -68,10 +79,20 @@
         <div class="card-body d-flex flex-column">
           <h3 class="card-title">Mousse de Lúcuma</h3>
           <p class="card-text">Un postre cremoso y suave con el sabor único de la lúcuma, una fruta peruana.</p>
+          <div class="mt-auto">
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseLucuma" role="button" aria-expanded="false" aria-controls="collapseLucuma">Ver Preparación</a>
+          </div>
+          <div class="collapse mt-3" id="collapseLucuma">
+            <div class="card card-body">
+              <h5>Ingredientes</h5>
+              <ul><li>Pulpa de lúcuma</li><li>Leche evaporada, leche condensada</li><li>Gelatina sin sabor</li></ul>
+              <h5>Preparación</h5>
+              <p>Licuar las leches con la lúcuma. Agregar la gelatina disuelta, verter en copas y refrigerar.</p>
+            </div>
+          </div>
         </div>
       </article>
     </div>
-
     <!-- Tarjeta de postre: Turrón -->
     <div class="col">
       <article class="card h-100">
@@ -79,10 +100,20 @@
         <div class="card-body d-flex flex-column">
           <h3 class="card-title">Turrón de Doña Pepa</h3>
           <p class="card-text">Dulce tradicional peruano de palitos de anís bañados en miel de chancaca.</p>
+          <div class="mt-auto">
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseTurron" role="button" aria-expanded="false" aria-controls="collapseTurron">Ver Preparación</a>
+          </div>
+          <div class="collapse mt-3" id="collapseTurron">
+            <div class="card card-body">
+              <h5>Ingredientes</h5>
+              <ul><li>Harina, manteca, anís</li><li>Chancaca, jugo de naranja, frutas</li></ul>
+              <h5>Preparación</h5>
+              <p>Preparar los palitos y hornear. Cocinar la miel con la chancaca y frutas. Armar capas de palitos y miel.</p>
+            </div>
+          </div>
         </div>
       </article>
     </div>
-
     <!-- Tarjeta de postre: Picarones -->
     <div class="col">
       <article class="card h-100">
@@ -90,10 +121,20 @@
         <div class="card-body d-flex flex-column">
           <h3 class="card-title">Picarones</h3>
           <p class="card-text">Anillos de masa frita de camote y zapallo, bañados en miel de chancaca.</p>
+          <div class="mt-auto">
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapsePicarones" role="button" aria-expanded="false" aria-controls="collapsePicarones">Ver Preparación</a>
+          </div>
+          <div class="collapse mt-3" id="collapsePicarones">
+            <div class="card card-body">
+              <h5>Ingredientes</h5>
+              <ul><li>Camote, zapallo, harina</li><li>Levadura, azúcar, anís</li></ul>
+              <h5>Preparación</h5>
+              <p>Hacer una masa con los purés y harina. Dejar levar, formar anillos y freír. Servir con miel de chancaca.</p>
+            </div>
+          </div>
         </div>
       </article>
     </div>
-
     <!-- Tarjeta de postre: Flan -->
     <div class="col">
       <article class="card h-100">
@@ -101,10 +142,20 @@
         <div class="card-body d-flex flex-column">
           <h3 class="card-title">Flan</h3>
           <p class="card-text">Un postre clásico, cremoso y suave, con una capa de caramelo líquido.</p>
+          <div class="mt-auto">
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseFlan" role="button" aria-expanded="false" aria-controls="collapseFlan">Ver Preparación</a>
+          </div>
+          <div class="collapse mt-3" id="collapseFlan">
+            <div class="card card-body">
+              <h5>Ingredientes</h5>
+              <ul><li>Leche evaporada, leche condensada</li><li>Huevos, esencia de vainilla</li></ul>
+              <h5>Preparación</h5>
+              <p>Hacer un caramelo en el molde. Licuar los demás ingredientes, verter en el molde y hornear a baño maría.</p>
+            </div>
+          </div>
         </div>
       </article>
     </div>
-
     <!-- Tarjeta de postre: Churros -->
     <div class="col">
       <article class="card h-100">
@@ -112,6 +163,17 @@
         <div class="card-body d-flex flex-column">
           <h3 class="card-title">Churros</h3>
           <p class="card-text">Masa frita, a menudo espolvoreada con azúcar y rellena de manjar blanco.</p>
+          <div class="mt-auto">
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseChurros" role="button" aria-expanded="false" aria-controls="collapseChurros">Ver Preparación</a>
+          </div>
+          <div class="collapse mt-3" id="collapseChurros">
+            <div class="card card-body">
+              <h5>Ingredientes</h5>
+              <ul><li>Harina, agua, sal, mantequilla</li></ul>
+              <h5>Preparación</h5>
+              <p>Hervir agua con sal y mantequilla. Agregar harina y mezclar. Poner en manga y freír en aceite caliente.</p>
+            </div>
+          </div>
         </div>
       </article>
     </div>

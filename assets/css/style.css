@@ -257,6 +257,7 @@ footer.bg-light .col-12.text-center {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   padding: 2rem;
+  align-items: start;
 }
 
 .receta {
@@ -285,6 +286,10 @@ footer.bg-light .col-12.text-center {
   animation-name: fadeInUp;
   animation-duration: 1s;
   animation-fill-mode: both;
+}
+
+.postres-grid {
+  align-items: start;
 }
 
 /*# sourceMappingURL=style.css.map */

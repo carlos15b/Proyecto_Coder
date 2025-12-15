@@ -50,36 +50,154 @@
 
     <!-- Contenedor de la cuadrícula de recetas -->
     <section class="recetas__container">
-        <div class="receta">
-            <img src="../assets/img/ceviche.jpg" alt="Plato de ceviche peruano fresco y colorido" class="receta__img" loading="lazy">
-            <h3 class="receta__titulo">Ceviche</h3>
-            <p class="receta__descripcion">Pescado marinado en jugo de limón con ají y cebolla.</p>
-        </div>
-        <div class="receta">
-            <img src="../assets/img/lomo saltado.jpg" alt="Salteado de lomo saltado con papas fritas y arroz" class="receta__img" loading="lazy">
-            <h3 class="receta__titulo">Lomo Saltado</h3>
-            <p class="receta__descripcion">Trozos de carne salteados con cebolla, tomate y papas fritas.</p>
-        </div>
-        <div class="receta">
-            <img src="../assets/img/anticucho.jpg" alt="Brochetas de anticucho a la parrilla" class="receta__img" loading="lazy">
-            <h3 class="receta__titulo">Anticucho</h3>
-            <p class="receta__descripcion">Brochetas de corazón de res marinadas y a la parrilla.</p>
-        </div>
-        <div class="receta">
-            <img src="../assets/img/pachamanca.jpg" alt="Plato tradicional de pachamanca con diversas carnes y vegetales" class="receta__img" loading="lazy">
-            <h3 class="receta__titulo">Pachamanca</h3>
-            <p class="receta__descripcion">Carnes y vegetales cocidos bajo tierra con piedras calientes.</p>
-        </div>
-        <div class="receta">
-            <img src="../assets/img/CAUSA-RELLENA.jpg" alt="Causa rellena peruana decorada con huevo y aceituna" class="receta__img" loading="lazy">
-            <h3 class="receta__titulo">Causa Rellena</h3>
-            <p class="receta__descripcion">Pastel de papa amarilla relleno de pollo o atún.</p>
-        </div>
-        <div class="receta">
-            <img src="../assets/img/POLLO-ALA-BRASA.jpg" alt="Pollo a la brasa dorado y jugoso con papas fritas" class="receta__img" loading="lazy">
-            <h3 class="receta__titulo">Pollo a la Brasa</h3>
-            <p class="receta__descripcion">Pollo marinado y cocido a las brasas, un clásico peruano.</p>
-        </div>
+        <!-- Tarjeta Ceviche -->
+        <article class="receta card">
+            <img src="../assets/img/ceviche.jpg" alt="Plato de ceviche peruano fresco y colorido" class="receta__img card-img-top" loading="lazy">
+            <div class="card-body d-flex flex-column">
+                <h3 class="receta__titulo card-title">Ceviche</h3>
+                <p class="receta__descripcion card-text">Pescado marinado en jugo de limón con ají y cebolla.</p>
+                <div class="mt-auto">
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseCeviche" role="button" aria-expanded="false" aria-controls="collapseCeviche">Ver Preparación</a>
+                </div>
+                <div class="collapse mt-3" id="collapseCeviche">
+                    <div class="card card-body">
+                        <h5>Ingredientes</h5>
+                        <ul>
+                            <li>500g de pescado blanco fresco</li>
+                            <li>1 taza de jugo de limón</li>
+                            <li>1 ají limo, picado</li>
+                            <li>1 cebolla roja en juliana</li>
+                            <li>Cilantro picado</li>
+                            <li>Sal y pimienta</li>
+                        </ul>
+                        <h5>Preparación</h5>
+                        <p>Cortar el pescado en cubos. En un bol, marinar el pescado con jugo de limón, sal, pimienta y ají por 10 min. Añadir cebolla y cilantro antes de servir.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Tarjeta Lomo Saltado -->
+        <article class="receta card">
+            <img src="../assets/img/lomo saltado.jpg" alt="Salteado de lomo saltado con papas fritas y arroz" class="receta__img card-img-top" loading="lazy">
+            <div class="card-body d-flex flex-column">
+                <h3 class="receta__titulo card-title">Lomo Saltado</h3>
+                <p class="receta__descripcion card-text">Trozos de carne salteados con cebolla, tomate y papas fritas.</p>
+                <div class="mt-auto">
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseLomo" role="button" aria-expanded="false" aria-controls="collapseLomo">Ver Preparación</a>
+                </div>
+                <div class="collapse mt-3" id="collapseLomo">
+                    <div class="card card-body">
+                        <h5>Ingredientes</h5>
+                        <ul>
+                            <li>500g de lomo de res</li>
+                            <li>1 cebolla roja</li>
+                            <li>2 tomates</li>
+                            <li>1 ají amarillo</li>
+                            <li>Salsa de soja, vinagre</li>
+                            <li>Papas fritas y arroz</li>
+                        </ul>
+                        <h5>Preparación</h5>
+                        <p>Saltear la carne a fuego alto. Retirar y saltear las verduras. Juntar todo, agregar salsa de soja y vinagre. Servir con papas fritas y arroz.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Tarjeta Anticucho -->
+        <article class="receta card">
+            <img src="../assets/img/anticucho.jpg" alt="Brochetas de anticucho a la parrilla" class="receta__img card-img-top" loading="lazy">
+            <div class="card-body d-flex flex-column">
+                <h3 class="receta__titulo card-title">Anticucho</h3>
+                <p class="receta__descripcion card-text">Brochetas de corazón de res marinadas y a la parrilla.</p>
+                <div class="mt-auto">
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseAnticucho" role="button" aria-expanded="false" aria-controls="collapseAnticucho">Ver Preparación</a>
+                </div>
+                <div class="collapse mt-3" id="collapseAnticucho">
+                    <div class="card card-body">
+                        <h5>Ingredientes</h5>
+                        <ul>
+                            <li>500g de corazón de res</li>
+                            <li>1/2 taza de ají panca molido</li>
+                            <li>1/4 taza de vinagre tinto</li>
+                            <li>Ajo, comino, sal</li>
+                        </ul>
+                        <h5>Preparación</h5>
+                        <p>Limpiar y cortar el corazón. Marinar por al menos 3 horas con los condimentos. Ensartar en palitos y asar a la parrilla, barnizando con la marinada.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Tarjeta Pachamanca -->
+        <article class="receta card">
+            <img src="../assets/img/pachamanca.jpg" alt="Plato tradicional de pachamanca con diversas carnes y vegetales" class="receta__img card-img-top" loading="lazy">
+            <div class="card-body d-flex flex-column">
+                <h3 class="receta__titulo card-title">Pachamanca</h3>
+                <p class="receta__descripcion card-text">Carnes y vegetales cocidos bajo tierra con piedras calientes.</p>
+                <div class="mt-auto">
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapsePacha" role="button" aria-expanded="false" aria-controls="collapsePacha">Ver Preparación</a>
+                </div>
+                <div class="collapse mt-3" id="collapsePacha">
+                    <div class="card card-body">
+                        <h5>Ingredientes</h5>
+                        <ul>
+                            <li>Cordero, pollo, cerdo</li>
+                            <li>Papas, camotes, habas</li>
+                            <li>Humitas</li>
+                            <li>Hierbas: chincho, huacatay</li>
+                        </ul>
+<h5>Preparación</h5>
+<p>Calentar piedras. En un hoyo, colocar carnes y vegetales entre las piedras calientes y hojas de chincho. Cocer bajo tierra por 45-60 minutos.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Tarjeta Causa Rellena -->
+        <article class="receta card">
+            <img src="../assets/img/CAUSA-RELLENA.jpg" alt="Causa rellena peruana decorada con huevo y aceituna" class="receta__img card-img-top" loading="lazy">
+            <div class="card-body d-flex flex-column">
+                <h3 class="receta__titulo card-title">Causa Rellena</h3>
+                <p class="receta__descripcion card-text">Pastel de papa amarilla relleno de pollo o atún.</p>
+                <div class="mt-auto">
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseCausa" role="button" aria-expanded="false" aria-controls="collapseCausa">Ver Preparación</a>
+                </div>
+                <div class="collapse mt-3" id="collapseCausa">
+                    <div class="card card-body">
+                        <h5>Ingredientes</h5>
+                        <ul>
+                            <li>1kg de papa amarilla</li>
+                            <li>1/4 taza de ají amarillo molido</li>
+                            <li>Jugo de 3 limones</li>
+                            <li>Relleno: pollo o atún con mayonesa</li>
+                        </ul>
+                        <h5>Preparación</h5>
+                        <p>Hacer un puré con la papa, ají y limón. Formar una capa de puré, agregar el relleno y cubrir con otra capa de puré. Decorar al gusto.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Tarjeta Pollo a la Brasa -->
+        <article class="receta card">
+            <img src="../assets/img/POLLO-ALA-BRASA.jpg" alt="Pollo a la brasa dorado y jugoso con papas fritas" class="receta__img card-img-top" loading="lazy">
+            <div class="card-body d-flex flex-column">
+                <h3 class="receta__titulo card-title">Pollo a la Brasa</h3>
+                <p class="receta__descripcion card-text">Pollo marinado y cocido a las brasas, un clásico peruano.</p>
+                <div class="mt-auto">
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapsePollo" role="button" aria-expanded="false" aria-controls="collapsePollo">Ver Preparación</a>
+                </div>
+                <div class="collapse mt-3" id="collapsePollo">
+                    <div class="card card-body">
+                        <h5>Ingredientes</h5>
+                        <ul>
+                            <li>1 pollo entero</li>
+                            <li>Cerveza negra, salsa de soja</li>
+                            <li>Romero, comino, ajo</li>
+                            <li>Sal y pimienta</li>
+                        </ul>
+                        <h5>Preparación</h5>
+                        <p>Licuar todos los ingredientes de la marinada. Bañar el pollo y dejar macerar por al menos 4 horas. Asar en rosticero o al horno a 180°C hasta que esté cocido.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
     </section>
 </main>
 
