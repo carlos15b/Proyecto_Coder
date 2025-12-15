@@ -1,0 +1,31 @@
+.recetas__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.receta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+    &__img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    &__titulo {
+        margin: 1rem 1rem 0.5rem 1rem;
+    }
+
+    &__descripcion {
+        margin: 0 1rem 1rem 1rem;
+        flex-grow: 1;
+    }
+}
