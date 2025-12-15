@@ -3,279 +3,130 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog de Comidas - Recetas</title>
+  <title>Recetas - El rincón del buen sabor</title>
   <!-- Metadatos para SEO -->
-  <meta name="description" content="Descubre las mejores recetas de comida peruana y de todo el mundo.">
-  <meta name="keywords" content="recetas, comida, peruana, cocina, gastronomía">
+  <meta name="description" content="Explora una colección de las mejores recetas de la gastronomía peruana, desde ceviche hasta lomo saltado.">
   <meta name="author" content="El rincón del buen sabor">
   
   <!-- Estilos de Bootstrap y personalizados -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="../assets/css/style.css">
-  
-  <!-- Favicon y fuentes (opcional) -->
-  <!-- <link rel="icon" href="../favicon.ico" type="image/x-icon"> -->
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <!-- Enlace para accesibilidad, permite saltar al contenido principal -->
     <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
 
-  <!-- Encabezado con el logo y menú de navegación -->
-  <header role="banner">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-        <a class="navbar-brand" href="../index.html">
-          <img src="../assets/img/LOGO.jpg" alt="Logo del blog" width="50" height="50" class="d-inline-block align-top" loading="lazy">
-          El rincón del buen sabor
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="recetas.html">Recetas</a></li>
-            <li class="nav-item"><a class="nav-link" href="postres.html">Postres</a></li>
-            <li class="nav-item"><a class="nav-link" href="consejo.html">Consejos</a></li>
-            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <!-- Contenido principal de la página de recetas -->
-  <main id="main-content" role="main" class="container mt-4">
-    <h1 class="text-center mb-4">Recetas</h1>
-    <p class="lead text-center mb-4">Aquí encontrarás nuestras recetas más populares y fáciles de preparar, ideales para sorprender a tu familia y amigos.</p>
-    
-    <!-- Sección que contiene las tarjetas de recetas -->
-    <section class="contenido row row-cols-1 row-cols-md-2 g-4">
-
-      <!-- Tarjeta de receta: CEVICHE -->
-      <div class="col">
-        <article class="card h-100">
-          <img src="../assets/img/ceviche.jpg" class="card-img-top" alt="Ceviche peruano" loading="lazy">
-          <div class="card-body">
-            <h3 class="card-title">Ceviche Peruano</h3>
-            <p class="card-text">
-              El ceviche es el plato bandera del Perú. Fresco, ácido y lleno de sabor, 
-              es una preparación que combina pescado fresco con limón, cebolla, ají y cilantro.
-            </p>
-            <!-- Lista de ingredientes -->
-            <h4 class="card-subtitle mb-2 text-muted">Ingredientes:</h4>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">500 g de pescado fresco (corvina o lenguado)</li>
-              <li class="list-group-item">10 limones</li>
-              <li class="list-group-item">1 cebolla roja en pluma</li>
-              <li class="list-group-item">1 ají limo o rocoto en rodajas</li>
-              <li class="list-group-item">Sal, pimienta y cilantro al gusto</li>
-              <li class="list-group-item">Camote y maíz choclo para acompañar</li>
-            </ul>
-            <!-- Pasos de la preparación -->
-            <h4 class="card-subtitle mt-3 mb-2 text-muted">Preparación:</h4>
-            <p class="card-text">
-              Corta el pescado en cubos medianos y colócalo en un bol. Agrega sal y pimienta.  
-              Exprime los limones directamente sobre el pescado hasta cubrirlo.  
-              Añade la cebolla, el ají y el cilantro picado. Mezcla bien y deja reposar por unos minutos.  
-              Sirve acompañado de camote y maíz hervido. ¡Disfruta un clásico peruano!
-            </p>
-          </div>
-        </article>
-      </div>
-
-      <!-- Tarjeta de receta: LOMO SALTADO -->
-      <div class="col">
-        <article class="card h-100">
-          <img src="../assets/img/lomo saltado.jpg" class="card-img-top" alt="Lomo saltado" loading="lazy">
-          <div class="card-body">
-            <h3 class="card-title">Lomo Saltado</h3>
-            <p class="card-text">
-              El lomo saltado es una deliciosa fusión entre la cocina criolla y la oriental, 
-              con carne salteada, cebolla, tomate y papas fritas. Es uno de los platos más representativos del Perú.
-            </p>
-            <!-- Lista de ingredientes -->
-            <h4 class="card-subtitle mb-2 text-muted">Ingredientes:</h4>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">500 g de lomo de res en tiras</li>
-              <li class="list-group-item">1 cebolla roja cortada en gajos</li>
-              <li class="list-group-item">2 tomates en gajos</li>
-              <li class="list-group-item">2 cucharadas de sillao (salsa de soya)</li>
-              <li class="list-group-item">1 cucharada de vinagre rojo</li>
-              <li class="list-group-item">Papas fritas y arroz blanco para acompañar</li>
-            </ul>
-            <!-- Pasos de la preparación -->
-            <h4 class="card-subtitle mt-3 mb-2 text-muted">Preparación:</h4>
-            <p class="card-text">
-              En una sartén bien caliente, saltea la carne a fuego alto por unos minutos.  
-              Agrega la cebolla, el tomate, el sillao y el vinagre.  
-              Mezcla bien y cocina brevemente para que las verduras queden crujientes.  
-              Sirve acompañado de papas fritas y arroz blanco.  
-              ¡Un clásico irresistible de la gastronomía peruana!
-            </p>
-          </div>
-        </article>
-      </div>
-
-      <!-- Tarjeta de receta: POLLO A LA BRASA -->
-      <div class="col">
-        <article class="card h-100">
-          <img src="../assets/img/POLLO-ALA-BRASA.jpg" class="card-img-top" alt="Pollo a la brasa" loading="lazy">
-          <div class="card-body">
-            <h3 class="card-title">Pollo a la Brasa</h3>
-            <p class="card-text">
-              El pollo a la brasa es uno de los platos más consumidos en el Perú. Consiste en un pollo entero marinado en especias y asado al carbón.
-            </p>
-            <!-- Lista de ingredientes -->
-            <h4 class="card-subtitle mb-2 text-muted">Ingredientes:</h4>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">1 pollo entero</li>
-              <li class="list-group-item">Marinada especial (sillao, vinagre, comino, ajo, ají panca)</li>
-              <li class="list-group-item">Papas fritas y ensalada para acompañar</li>
-            </ul>
-            <!-- Pasos de la preparación -->
-            <h4 class="card-subtitle mt-3 mb-2 text-muted">Preparación:</h4>
-            <p class="card-text">
-              Marinar el pollo por varias horas o preferiblemente desde la noche anterior.
-              Asar en horno o a la brasa hasta que esté dorado y cocido.
-              Servir con papas fritas y ensalada fresca.
-            </p>
-          </div>
-        </article>
-      </div>
-
-      <!-- Tarjeta de receta: CAUSA RELLENA -->
-      <div class="col">
-        <article class="card h-100">
-          <img src="../assets/img/CAUSA-RELLENA.jpg" class="card-img-top" alt="Causa Rellena" loading="lazy">
-          <div class="card-body">
-            <h3 class="card-title">Causa Rellena</h3>
-            <p class="card-text">
-              La causa rellena es un plato frío y versátil a base de papa amarilla prensada y aderezada con limón y ají amarillo, rellena de atún o pollo.
-            </p>
-            <!-- Lista de ingredientes -->
-            <h4 class="card-subtitle mb-2 text-muted">Ingredientes:</h4>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">1 kg de papa amarilla</li>
-              <li class="list-group-item">2 limones</li>
-              <li class="list-group-item">2 cucharadas de ají amarillo molido</li>
-              <li class="list-group-item">Relleno (atún o pollo deshilachado, mayonesa, cebolla, apio)</li>
-              <li class="list-group-item">Aceitunas, huevo duro y palta para decorar</li>
-            </ul>
-            <!-- Pasos de la preparación -->
-            <h4 class="card-subtitle mt-3 mb-2 text-muted">Preparación:</h4>
-            <p class="card-text">
-              Sancochar y prensar las papas. Mezclar con ají amarillo, limón y aceite.
-              Formar capas con la papa y el relleno.
-              Decorar y refrigerar antes de servir.
-            </p>
-          </div>
-        </article>
-      </div>
-
-      <!-- Tarjeta de receta: ANTICUCHO -->
-      <div class="col">
-        <article class="card h-100">
-          <img src="../assets/img/anticucho.jpg" class="card-img-top" alt="Anticucho" loading="lazy">
-          <div class="card-body">
-            <h3 class="card-title">Anticucho</h3>
-            <p class="card-text">
-              Los anticuchos son brochetas de corazón de res marinado, cocinadas a la parrilla. Un clásico de la comida callejera peruana.
-            </p>
-            <!-- Lista de ingredientes -->
-            <h4 class="card-subtitle mb-2 text-muted">Ingredientes:</h4>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">1 kg de corazón de res</li>
-              <li class="list-group-item">Ají panca, vinagre, ajo, comino</li>
-              <li class="list-group-item">Palitos de brocheta</li>
-              <li class="list-group-item">Papas sancochadas para acompañar</li>
-            </ul>
-            <!-- Pasos de la preparación -->
-            <h4 class="card-subtitle mt-3 mb-2 text-muted">Preparación:</h4>
-            <p class="card-text">
-              Cortar el corazón en trozos y marinar en la mezcla de ají panca y especias.
-              Ensartar en los palitos y asar a la parrilla hasta que estén cocidos y dorados.
-              Servir con papas doradas.
-            </p>
-          </div>
-        </article>
-      </div>
-
-      <!-- Tarjeta de receta: PACHAMANCA -->
-      <div class="col">
-        <article class="card h-100">
-          <img src="../assets/img/pachamanca.jpg" class="card-img-top" alt="Pachamanca" loading="lazy">
-          <div class="card-body">
-            <h3 class="card-title">Pachamanca</h3>
-            <p class="card-text">
-              La pachamanca es un plato ancestral andino cocinado bajo tierra con piedras calientes, que incluye carnes, papas, humitas y habas.
-            </p>
-            <!-- Lista de ingredientes -->
-            <h4 class="card-subtitle mb-2 text-muted">Ingredientes:</h4>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Carnes (cordero, cerdo, res, pollo)</li>
-              <li class="list-group-item">Papas, camotes, humitas (choclos)</li>
-              <li class="list-group-item">Marinado especial (huacatay, ají panca, comino)</li>
-              <li class="list-group-item">Hierbas aromáticas</li>
-            </ul>
-            <!-- Pasos de la preparación -->
-            <h4 class="card-subtitle mt-3 mb-2 text-muted">Preparación:</h4>
-            <p class="card-text">
-              Calentar piedras en un hoyo.
-              Marinar las carnes y envolverlas con las verduras en hojas de plátano.
-              Colocar todo en el hoyo, cubrir y cocinar.
-            </p>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <!-- Pie de página con navegación, redes sociales y contacto -->
-  <footer role="contentinfo" class="bg-light py-4 mt-5">
+<!-- Encabezado con el logo y menú de navegación -->
+<header role="banner">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-      <div class="row">
-        <!-- Navegación del pie de página -->
-        <div class="col-md-3 mb-3">
-          <h4>Navegación</h4>
-          <ul class="list-unstyled">
-            <li><a href="../index.html" class="text-decoration-none text-dark">Inicio</a></li>
-            <li><a href="recetas.html" class="text-decoration-none text-dark">Recetas</a></li>
-            <li><a href="postres.html" class="text-decoration-none text-dark">Postres</a></li>
-            <li><a href="consejo.html" class="text-decoration-none text-dark">Consejos</a></li>
-            <li><a href="contacto.html" class="text-decoration-none text-dark">Contacto</a></li>
-          </ul>
-        </div>
-        <!-- Redes sociales -->
-        <div class="col-md-3 mb-3">
-          <h4>Síguenos</h4>
-          <ul class="list-unstyled">
-            <li><a href="#" aria-label="Facebook" class="text-decoration-none text-dark"><img src="../assets/img/FACEBOOK.png" alt="Facebook" width="24" height="24" class="me-2" loading="lazy">Facebook</a></li>
-            <li><a href="#" aria-label="Instagram" class="text-decoration-none text-dark"><img src="../assets/img/INSTAGRAM.png" alt="Instagram" width="24" height="24" class="me-2" loading="lazy">Instagram</a></li>
-            <li><a href="#" aria-label="Twitter" class="text-decoration-none text-dark"><img src="../assets/img/TWITTER.png" alt="Twitter" width="24" height="24" class="me-2" loading="lazy">Twitter</a></li>
-          </ul>
-        </div>
-        <!-- Información de contacto -->
-        <div class="col-md-3 mb-3">
-          <h4>Contacto</h4>
-          <p class="text-dark">Email: info@elrincondelbuensabor.com</p>
-          <p class="text-dark">Teléfono: +123 456 7890</p>
-        </div>
-        <!-- Acerca de -->
-        <div class="col-md-3 mb-3">
-          <h4 class="text-dark">Acerca de</h4>
-          <p class="text-dark">Somos un equipo apasionado por la cocina, compartiendo las mejores recetas y consejos culinarios.</p>
-        </div>
-      </div>
-      <!-- Derechos de autor -->
-      <div class="row">
-        <div class="col-12 text-center mt-3">
-          <p class="text-dark">&copy; 2025 El rincón del buen sabor. Todos los derechos reservados.</p>
-        </div>
+      <a class="navbar-brand" href="../index.html">
+        <img src="../assets/img/LOGO.jpg" alt="Logo del blog El rincón del buen sabor" width="50" height="50" class="d-inline-block align-top" loading="lazy">
+        El rincón del buen sabor
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="recetas.html">Recetas</a></li>
+          <li class="nav-item"><a class="nav-link" href="postres.html">Postres</a></li>
+          <li class="nav-item"><a class="nav-link" href="consejo.html">Consejos</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
       </div>
     </div>
-  </footer>
+  </nav>
+</header>
+
+<!-- Contenido principal de la página de recetas -->
+<main id="main-content" role="main" class="container mt-4">
+    <div class="text-center">
+      <h1 class="mb-3">Nuestras Recetas</h1>
+      <p class="lead mb-4">Explora una colección de los platos más representativos de la gastronomía peruana.</p>
+    </div>
+
+    <!-- Contenedor de la cuadrícula de recetas -->
+    <section class="recetas__container">
+        <div class="receta">
+            <img src="../assets/img/ceviche.jpg" alt="Plato de ceviche peruano fresco y colorido" class="receta__img" loading="lazy">
+            <h3 class="receta__titulo">Ceviche</h3>
+            <p class="receta__descripcion">Pescado marinado en jugo de limón con ají y cebolla.</p>
+        </div>
+        <div class="receta">
+            <img src="../assets/img/lomo saltado.jpg" alt="Salteado de lomo saltado con papas fritas y arroz" class="receta__img" loading="lazy">
+            <h3 class="receta__titulo">Lomo Saltado</h3>
+            <p class="receta__descripcion">Trozos de carne salteados con cebolla, tomate y papas fritas.</p>
+        </div>
+        <div class="receta">
+            <img src="../assets/img/anticucho.jpg" alt="Brochetas de anticucho a la parrilla" class="receta__img" loading="lazy">
+            <h3 class="receta__titulo">Anticucho</h3>
+            <p class="receta__descripcion">Brochetas de corazón de res marinadas y a la parrilla.</p>
+        </div>
+        <div class="receta">
+            <img src="../assets/img/pachamanca.jpg" alt="Plato tradicional de pachamanca con diversas carnes y vegetales" class="receta__img" loading="lazy">
+            <h3 class="receta__titulo">Pachamanca</h3>
+            <p class="receta__descripcion">Carnes y vegetales cocidos bajo tierra con piedras calientes.</p>
+        </div>
+        <div class="receta">
+            <img src="../assets/img/CAUSA-RELLENA.jpg" alt="Causa rellena peruana decorada con huevo y aceituna" class="receta__img" loading="lazy">
+            <h3 class="receta__titulo">Causa Rellena</h3>
+            <p class="receta__descripcion">Pastel de papa amarilla relleno de pollo o atún.</p>
+        </div>
+        <div class="receta">
+            <img src="../assets/img/POLLO-ALA-BRASA.jpg" alt="Pollo a la brasa dorado y jugoso con papas fritas" class="receta__img" loading="lazy">
+            <h3 class="receta__titulo">Pollo a la Brasa</h3>
+            <p class="receta__descripcion">Pollo marinado y cocido a las brasas, un clásico peruano.</p>
+        </div>
+    </section>
+</main>
+
+<!-- Pie de página con navegación, redes sociales y contacto -->
+<footer role="contentinfo" class="bg-light py-4 mt-5">
+  <div class="container">
+    <div class="row">
+      <!-- Navegación del pie de página -->
+      <div class="col-md-3 mb-3">
+        <h4>Navegación</h4>
+        <ul class="list-unstyled">
+          <li><a href="../index.html" class="text-decoration-none text-dark">Inicio</a></li>
+          <li><a href="recetas.html" class="text-decoration-none text-dark">Recetas</a></li>
+          <li><a href="postres.html" class="text-decoration-none text-dark">Postres</a></li>
+          <li><a href="consejo.html" class="text-decoration-none text-dark">Consejos</a></li>
+          <li><a href="contacto.html" class="text-decoration-none text-dark">Contacto</a></li>
+        </ul>
+      </div>
+      <!-- Redes sociales -->
+      <div class="col-md-3 mb-3">
+        <h4>Síguenos</h4>
+        <ul class="list-unstyled">
+          <li><a href="#" aria-label="Facebook" class="text-decoration-none text-dark"><img src="../assets/img/FACEBOOK.png" alt="Logo de Facebook" width="24" height="24" class="me-2" loading="lazy">Facebook</a></li>
+          <li><a href="#" aria-label="Instagram" class="text-decoration-none text-dark"><img src="../assets/img/INSTAGRAM.png" alt="Logo de Instagram" width="24" height="24" class="me-2" loading="lazy">Instagram</a></li>
+          <li><a href="#" aria-label="Twitter" class="text-decoration-none text-dark"><img src="../assets/img/TWITTER.png" alt="Logo de Twitter" width="24" height="24" class="me-2" loading="lazy">Twitter</a></li>
+        </ul>
+      </div>
+      <!-- Información de contacto -->
+      <div class="col-md-3 mb-3">
+        <h4>Contacto</h4>
+        <p class="text-dark">Email: info@elrincondelbuensabor.com</p>
+        <p class="text-dark">Teléfono: +123 456 7890</p>
+      </div>
+      <!-- Acerca de -->
+      <div class="col-md-3 mb-3">
+        <h4 class="text-dark">Acerca de</h4>
+        <p class="text-dark">Somos un equipo apasionado por la cocina, compartiendo las mejores recetas y consejos culinarios.</p>
+      </div>
+    </div>
+    <!-- Derechos de autor -->
+    <div class="row">
+      <div class="col-12 text-center mt-3">
+        <p class="text-dark">&copy; 2025 El rincón del buen sabor. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </div>
+</footer>
 
     <!-- Scripts de JavaScript -->
     <script src="../assets/js/main.js"></script>
