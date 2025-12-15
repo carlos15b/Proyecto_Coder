@@ -1,17 +1,68 @@
-// _header.scss
+.navbar {
+    padding: 1rem 0;
 
-#hero.bg-light {
-    background-color: #ffe5b4 !important;
-}
+    .container {
+        display: flex; // Ensure it's a flex container
+        flex-direction: column; // Stack items vertically by default (mobile first)
+        align-items: center;   // Center items horizontally
 
-.hero-with-bg {
-    background-image: url('../img/bienvenida.png');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        // Style for the brand (logo + title)
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem; // Space below brand before toggler/menu
+            text-align: center; // Center text inside brand
 
-    h1, p {
-        color: white;
+            img {
+                margin-right: 0.5rem;
+            }
+        }
+
+        // Style for the toggler (hamburger menu button)
+        .navbar-toggler {
+            margin-top: 0.5rem; // Space above toggler
+            margin-bottom: 1rem; // Space below toggler before collapsed menu
+        }
+
+        // Style for the collapsed menu (ul.navbar-nav)
+        .navbar-collapse {
+            width: 100%; // Occupy full width when collapsed
+            .navbar-nav {
+                width: 100%;
+                justify-content: center; // Center nav items horizontally
+                .nav-item {
+                    text-align: center; // Center text in each nav item
+                    margin: 0.5rem 0; // Vertical margin for stacked items
+                }
+            }
+        }
+
+        // Desktop styles (using Bootstrap's 'lg' breakpoint - 992px)
+        @media (min-width: 992px) {
+            flex-direction: row; // Horizontal layout on desktop
+            justify-content: space-between; // Space between brand and menu
+            align-items: center; // Vertically align items
+
+            .navbar-brand {
+                margin-bottom: 0; // No bottom margin on desktop
+                text-align: left; // Align text to left
+            }
+
+            .navbar-toggler {
+                display: none; // Hide toggler on desktop
+            }
+
+            .navbar-collapse {
+                width: auto; // Auto width for horizontal menu
+                .navbar-nav {
+                    justify-content: flex-end; // Align menu items to the right
+                    .nav-item {
+                        margin: 0 0 0 1rem; // Horizontal margin for desktop nav links
+                    }
+                }
+            }
+        }
     }
 }

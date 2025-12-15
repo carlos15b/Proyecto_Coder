@@ -1,10 +1,12 @@
-// _home.scss
-
-#about-us {
-    .about-us-buttons {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-        margin-top: 1rem;
-    }
+.hero-with-bg {
+  background-image: url('../img/bienvenida.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  // Asegura que el texto sea legible sobre la imagen
+  h1, p {
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
 }
