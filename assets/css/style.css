@@ -39,6 +39,16 @@ p {
   animation: fade-in 1s ease-out forwards;
 }
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 #hero.bg-light {
   background-color: #ffe5b4 !important;
 }
@@ -222,6 +232,12 @@ footer.bg-light .col-12.text-center {
 .receta__descripcion {
   margin: 0 1rem 1rem 1rem;
   flex-grow: 1;
+}
+
+#map-placeholder {
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-fill-mode: both;
 }
 
 /*# sourceMappingURL=style.css.map */
